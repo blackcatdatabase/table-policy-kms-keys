@@ -54,8 +54,8 @@ erDiagram
     INT weight
     INT priority
   }
-  POLICY_KMS_KEYS }o--|| ENCRYPTION_POLICIES : (policy_id)
-  POLICY_KMS_KEYS }o--|| KMS_KEYS : (kms_key_id)
+  POLICY_KMS_KEYS }o--|| ENCRYPTION_POLICIES : "policy_id"
+  POLICY_KMS_KEYS }o--|| KMS_KEYS : "kms_key_id"
 ```
 
 ## Indexes
