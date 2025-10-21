@@ -2,7 +2,7 @@
 
 ![SQL](https://img.shields.io/badge/SQL-MySQL%208.0%2B-4479A1?logo=mysql&logoColor=white) ![License](https://img.shields.io/badge/license-BlackCat%20Proprietary-red) ![Status](https://img.shields.io/badge/status-stable-informational) ![Generated](https://img.shields.io/badge/generated-from%20schema--map-blue)
 
-> Schema package for table **policy_kms_keys** (repo: $slug).
+> Schema package for table **policy_kms_keys** (repo: `policy-kms-keys`).
 
 ## Files
 ```
@@ -49,8 +49,8 @@ mysql -h 127.0.0.1 -P 3307 -u root -proot app < schema/030_foreign_keys.sql
 ```mermaid
 erDiagram
   POLICY_KMS_KEYS {
-    BIGINT policy_id
-    BIGINT kms_key_id
+    INT policy_id
+    INT kms_key_id
     INT weight
     INT priority
   }
