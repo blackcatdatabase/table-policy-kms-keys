@@ -1,4 +1,4 @@
--- Auto-generated from schema-map.psd1 on 2025-10-21T02:32:05
+-- Auto-generated from schema-map.psd1 @ 1e83bb6 (2025-10-21T10:18:36+02:00)
 -- table: policy_kms_keys
 ALTER TABLE policy_kms_keys ADD CONSTRAINT fk_policy_kms_keys_policy FOREIGN KEY (policy_id) REFERENCES encryption_policies(id) ON DELETE CASCADE;
 
