@@ -1,4 +1,4 @@
--- Auto-generated from schema-map.psd1 @ 1e83bb6 (2025-10-21T10:18:36+02:00)
+-- Auto-generated from schema-map.psd1 (map@1e83bb6)
 -- table: policy_kms_keys
 CREATE TABLE IF NOT EXISTS policy_kms_keys (
   policy_id BIGINT UNSIGNED NOT NULL,
