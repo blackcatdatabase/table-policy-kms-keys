@@ -1,4 +1,4 @@
-<!-- Auto-generated from schema-defs.psd1 @ 0d1e984 (2025-10-21T22:04:56+02:00) -->
+<!-- Auto-generated from schema-map.psd1 @ 6cefe8e (2025-10-22T20:27:41+02:00) -->
 # Definition – policy_kms_keys
 
 KMS key assignments per encryption policy.
@@ -6,3 +6,7 @@ KMS key assignments per encryption policy.
 ## Columns
 | Column | Type | Null | Default | Description | Notes |
 |-------:|:-----|:----:|:--------|:------------|:------|
+| policy_id | BIGINT UNSIGNED | NO | — | Policy (FK encryption_policies.id). |  |
+| kms_key_id | BIGINT UNSIGNED | NO | — | KMS key (FK kms_keys.id). |  |
+| weight | INT | NO | 1 | Weight for selection algorithms. |  |
+| priority | INT | NO | 0 | Priority (higher first). |  |
