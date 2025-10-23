@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace BlackCat\Database\Packages\PolicyKmsKeys\Service;
 
-use BlackCat\Core\Database\Database;
+use BlackCat\Core\Database;
 use BlackCat\Database\Packages\PolicyKmsKeys\Dto\PolicyKmsKeyDto;
 use BlackCat\Database\Packages\PolicyKmsKeys\Mapper\PolicyKmsKeyDtoMapper;
 use BlackCat\Database\Packages\PolicyKmsKeys\Repository\PolicyKmsKeyRepository;
