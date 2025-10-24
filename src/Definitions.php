@@ -6,7 +6,7 @@ namespace BlackCat\Database\Packages\PolicyKmsKeys;
 final class Definitions {
     // --- základní metadata ---
     public static function table(): string { return 'policy_kms_keys'; }
-    public static function contractView(): string { return 'v_policy_kms_keys_contract'; }
+    public static function contractView(): string { return 'vw_policy_kms_keys'; }
     /** @return string[] */
     public static function columns(): array { return [ 'policy_id', 'kms_key_id', 'weight', 'priority' ]; }
     public static function pk(): string { return 'policy_id'; }
