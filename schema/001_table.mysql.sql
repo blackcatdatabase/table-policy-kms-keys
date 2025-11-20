@@ -1,4 +1,4 @@
--- Auto-generated from schema-map-mysql.psd1 (map@db2f8b8)
+-- Auto-generated from schema-map-mysql.psd1 (map@62c9c93)
 -- engine: mysql
 -- table:  policy_kms_keys
 CREATE TABLE IF NOT EXISTS policy_kms_keys (
@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS policy_kms_keys (
   weight INT NOT NULL DEFAULT 1,
   priority INT NOT NULL DEFAULT 0,
   PRIMARY KEY (policy_id, kms_key_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;

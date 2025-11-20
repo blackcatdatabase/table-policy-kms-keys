@@ -2,7 +2,7 @@
 
 ![SQL](https://img.shields.io/badge/SQL-MySQL%208.0%2B-4479A1?logo=mysql&logoColor=white) ![License](https://img.shields.io/badge/license-BlackCat%20Proprietary-red) ![Status](https://img.shields.io/badge/status-stable-informational) ![Generated](https://img.shields.io/badge/generated-from%20schema--map-blue)
 
-<!-- Auto-generated from schema-map.psd1 @ 6cefe8e (2025-10-22T20:27:41+02:00) -->
+<!-- Auto-generated from schema-map-postgres.psd1 @ 62c9c93 (2025-11-20T21:38:11+01:00) -->
 
 > Schema package for table **policy_kms_keys** (repo: `policy-kms-keys`).
 
@@ -39,10 +39,10 @@ mysql -h 127.0.0.1 -P 3307 -u root -proot app < schema/030_foreign_keys.sql
 ## Columns
 | Column | Type | Null | Default | Extra |
 |-------:|:-----|:----:|:--------|:------|
-| policy_id | BIGINT UNSIGNED | NO | — |  |
-| kms_key_id | BIGINT UNSIGNED | NO | — |  |
-| weight | INT | NO | 1 |  |
-| priority | INT | NO | 0 |  |
+| policy_id | BIGINT | NO | — |  |
+| kms_key_id | BIGINT | NO | — |  |
+| weight | INTEGER | NO | 1 |  |
+| priority | INTEGER | NO | 0 |  |
 
 ## Relationships
 - FK → **encryption_policies** via (policy_id) (ON DELETE CASCADE).
@@ -53,8 +53,8 @@ erDiagram
   POLICY_KMS_KEYS {
     INT policy_id
     INT kms_key_id
-    INT weight
-    INT priority
+    INTEGER weight
+    INTEGER priority
   }
   POLICY_KMS_KEYS }o--|| ENCRYPTION_POLICIES : "policy_id"
   POLICY_KMS_KEYS }o--|| KMS_KEYS : "kms_key_id"
