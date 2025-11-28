@@ -1,6 +1,7 @@
--- Auto-generated from schema-map-postgres.psd1 (map@62c9c93)
+-- Auto-generated from schema-map-postgres.psd1 (map@mtime:2025-11-21T00:25:46Z)
 -- engine: postgres
 -- table:  policy_kms_keys
+
 CREATE TABLE IF NOT EXISTS policy_kms_keys (
   policy_id BIGINT NOT NULL,
   kms_key_id BIGINT NOT NULL,

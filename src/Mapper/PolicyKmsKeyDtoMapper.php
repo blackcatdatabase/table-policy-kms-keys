@@ -17,7 +17,7 @@ use BlackCat\Database\Support\DtoHydrator;
 final class PolicyKmsKeyDtoMapper
 {
     /** @var array<string,string> Column -> DTO property */
-    private const COL_TO_PROP = [ 'policy_id' => 'policyId', 'kms_key_id' => 'kmsKeyId' ];
+    private const COL_TO_PROP = [ 'policy_id' => 'policyId', 'kms_key_id' => 'kmsKeyId', 'weight' => 'weight', 'priority' => 'priority' ];
 
     /** @var string[] */
     private const BOOL_COLS   = [];
