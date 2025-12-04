@@ -1,4 +1,4 @@
--- Auto-generated from schema-views-mysql.yaml (map@94ebe6c)
+-- Auto-generated from schema-views-mysql.yaml (map@4ae85c5)
 -- engine: mysql
 -- table:  policy_kms_keys
 
@@ -8,5 +8,7 @@ SELECT
   policy_id,
   kms_key_id,
   weight,
-  priority
+  priority,
+  created_at,
+  updated_at
 FROM policy_kms_keys;

@@ -39,7 +39,9 @@ SELECT
   policy_id,
   kms_key_id,
   weight,
-  priority
+  priority,
+  created_at,
+  updated_at
 FROM policy_kms_keys;
 SQL;
         } else {
@@ -49,7 +51,9 @@ SELECT
   policy_id,
   kms_key_id,
   weight,
-  priority
+  priority,
+  created_at,
+  updated_at
 FROM policy_kms_keys;
 SQL;
         }

@@ -8,7 +8,7 @@ final class Definitions {
     public static function table(): string { return 'policy_kms_keys'; }
     public static function contractView(): string { return 'vw_policy_kms_keys'; }
     /** @return string[] */
-    public static function columns(): array { return [ 'policy_id', 'kms_key_id', 'weight', 'priority' ]; }
+    public static function columns(): array { return [ 'policy_id', 'kms_key_id', 'weight', 'priority', 'created_at', 'updated_at' ]; }
 
     /** @var array<string,array<int,string>> */
     public const STATUS_TRANSITIONS = [];
@@ -46,14 +46,14 @@ final class Definitions {
         $c = trim(''); return $c !== '' ? $c : null;
     }
     public static function updatedAtColumn(): ?string {
-        $c = trim(''); return $c !== '' ? $c : null;
+        $c = trim('updated_at'); return $c !== '' ? $c : null;
     }
     public static function versionColumn(): ?string {
         $c = trim(''); return $c !== '' ? $c : null;
     }
     /** e.g. "created_at DESC, id DESC" */
     public static function defaultOrder(): ?string {
-        $c = trim('policy_id kms_key_id DESC'); return $c !== '' ? $c : null;
+        $c = trim('created_at DESC, policy_id kms_key_id DESC'); return $c !== '' ? $c : null;
     }
 
     /** @return array<int,array<int,string>> list of unique keys */
