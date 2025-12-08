@@ -7,8 +7,8 @@ KMS key assignments per encryption policy. PRIMARY KEY (policy_id, kms_key_id).
 | --- | --- | --- | --- | --- |
 | kms_key_id | BIGINT | NO |  | KMS key (FK kms_keys.id). |
 | policy_id | BIGINT | NO |  | Policy (FK encryption_policies.id). |
-| priority | INTEGER | NO | 0 | Priority (higher first). |
-| weight | INTEGER | NO | 1 | Weight for selection algorithms. |
+| priority | INT | NO | 0 | Priority (higher first). |
+| weight | INT | NO | 1 | Weight for selection algorithms. |
 
 ## Engine Details
 
@@ -33,5 +33,5 @@ Foreign keys:
 ## Views
 | View | Engine | Flags | File |
 | --- | --- | --- | --- |
-| vw_policy_kms_keys | mysql | algorithm=MERGE, security=INVOKER | [packages\policy-kms-keys\schema\040_views.mysql.sql](https://github.com/blackcatacademy/blackcat-database/packages/policy-kms-keys/schema/040_views.mysql.sql) |
-| vw_policy_kms_keys | postgres |  | [packages\policy-kms-keys\schema\040_views.postgres.sql](https://github.com/blackcatacademy/blackcat-database/packages/policy-kms-keys/schema/040_views.postgres.sql) |
+| vw_policy_kms_keys | mysql | algorithm=MERGE, security=INVOKER | [schema\040_views.mysql.sql](schema\040_views.mysql.sql) |
+| vw_policy_kms_keys | postgres |  | [schema\040_views.postgres.sql](schema\040_views.postgres.sql) |
