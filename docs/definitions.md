@@ -7,8 +7,8 @@ KMS key assignments per encryption policy. PRIMARY KEY (policy_id, kms_key_id).
 | --- | --- | --- | --- | --- |
 | kms_key_id | BIGINT | NO |  | KMS key (FK kms_keys.id). |
 | policy_id | BIGINT | NO |  | Policy (FK encryption_policies.id). |
-| priority | INT | NO | 0 | Priority (higher first). |
-| weight | INT | NO | 1 | Weight for selection algorithms. |
+| priority | mysql: INT / postgres: INTEGER | NO | 0 | Priority (higher first). |
+| weight | mysql: INT / postgres: INTEGER | NO | 1 | Weight for selection algorithms. |
 
 ## Engine Details
 
