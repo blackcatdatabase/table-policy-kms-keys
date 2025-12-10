@@ -78,8 +78,8 @@ graph LR
   classDef accent fill:#1d1b4c,stroke:#a855f7,stroke-width:2px,color:#f5e1ff;
   classDef inbound fill:#0f172a,stroke:#10b981,stroke-width:2px,color:#e2fcef;
   policy_kms_keys["policy_kms_keys"]:::center
-  policy_kms_keys -->|FK| kms_keys["kms_keys"]:::link
-  policy_kms_keys -->|FK| encryption_policies["encryption_policies"]:::accent
+  policy_kms_keys -->|FK| encryption_policies["encryption_policies"]:::link
+  policy_kms_keys -->|FK| kms_keys["kms_keys"]:::accent
   linkStyle 0 stroke:#ff6b6b,stroke-width:3px,opacity:0.92;
   linkStyle 1 stroke:#64dfdf,stroke-width:3px,opacity:0.92;
 ```
