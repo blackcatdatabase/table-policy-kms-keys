@@ -1,0 +1,26 @@
+{
+  "tables": {
+    "policy_kms_keys": {
+      "columns": {
+        "created_at": {
+          "strategy": "passthrough"
+        },
+        "kms_key_id": {
+          "strategy": "passthrough"
+        },
+        "policy_id": {
+          "strategy": "passthrough"
+        },
+        "priority": {
+          "strategy": "passthrough"
+        },
+        "updated_at": {
+          "strategy": "passthrough"
+        },
+        "weight": {
+          "strategy": "passthrough"
+        }
+      }
+    }
+  }
+}

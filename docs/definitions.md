@@ -3,12 +3,14 @@
 KMS key assignments per encryption policy. PRIMARY KEY (policy_id, kms_key_id).
 
 ## Columns
-| Column | Type | Null | Default | Description |
-| --- | --- | --- | --- | --- |
-| policy_id | BIGINT | NO |  | Policy (FK encryption_policies.id). |
-| kms_key_id | BIGINT | NO |  | KMS key (FK kms_keys.id). |
-| weight | mysql: INT / postgres: INTEGER | NO | 1 | Weight for selection algorithms. |
-| priority | mysql: INT / postgres: INTEGER | NO | 0 | Priority (higher first). |
+| Column | Type | Null | Default | Description | Crypto |
+| --- | --- | --- | --- | --- | --- |
+| policy_id | BIGINT | NO |  | Policy (FK encryption_policies.id). |  |
+| kms_key_id | BIGINT | NO |  | KMS key (FK kms_keys.id). |  |
+| weight | mysql: INT / postgres: INTEGER | NO | 1 | Weight for selection algorithms. |  |
+| priority | mysql: INT / postgres: INTEGER | NO | 0 | Priority (higher first). |  |
+| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
+| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |  |
 
 ## Engine Details
 
